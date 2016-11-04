@@ -12,7 +12,7 @@ public class PrintCalendar {
 
 		// print calendar weekday header
 		System.out.println("Sun Mon Tue Wed Thu Fri Sat");
-//		System.out.println("Mon Tue Wed Thu Fri Sat Sun ");
+
 
 		// leave/skip weekdays before the first day of month
 		for (int day = 1; day < firstWeekdayOfMonth; day++) {
