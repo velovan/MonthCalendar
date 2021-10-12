@@ -20,8 +20,8 @@ public class PrintCalendarMonthYear {
 		cal.set(year, month - 1, 1);
 	 
 		// print calendar header
-		System.out.println( "\n" + "        " + cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.UK) + ":  " + cal.get(Calendar.YEAR));
-		System.out.println("___________________________\n ");
+		System.out.println( "\n" + "       " + cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.UK) + ":  " + cal.get(Calendar.YEAR));
+		System.out.println("__________________________\n ");
 		
 		// obtain the weekday of the first day of month.
 		int firstWeekdayOfMonth = cal.get(Calendar.DAY_OF_WEEK);
