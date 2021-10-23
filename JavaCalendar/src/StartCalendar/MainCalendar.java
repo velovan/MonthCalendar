@@ -25,5 +25,4 @@ public class MainCalendar {
 		SelectedMonthMain clen = new SelectedMonthMain();
 		clen.introducingMonth();
 	}
-
 }
