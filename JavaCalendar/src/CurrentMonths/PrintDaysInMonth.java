@@ -43,9 +43,8 @@ public class PrintDaysInMonth {
 				// first check if any padding needed
 				int padding = 28 - week.length();
 				if (padding > 0) {
-					
-					// pad out start of week
-					week.insert(0, String.format("%" + padding + "s", "  "));
+				    // pad out start of week
+				    week.insert(0, String.format("%" + padding + "s", "  "));
 				}
 				System.out.println(week);
 				week.setLength(0);
