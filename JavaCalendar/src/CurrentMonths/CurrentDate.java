@@ -10,7 +10,7 @@ public class CurrentDate {
    */
 	
 	public CurrentDate() {
-		System.out.println("\n ***" + "Calendar for the month" + "***\n");
+		System.out.println("\n ***" + " Calendar for the month" + "***\n");
 	}
 
 	public void currentDate(Calendar cal) {
