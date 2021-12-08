@@ -28,9 +28,9 @@ public class PrintNameOfDays {
 
 		for (int i = 0; i < 7; i++) {
 
-			System.out.print(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault().UK));
-			System.out.print(" ");
-			cal.add(Calendar.DATE, 1);
+		     System.out.print(cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.getDefault().UK));
+		     System.out.print(" ");
+		     cal.add(Calendar.DATE, 1);
 		}
 		System.out.println();
 	}
