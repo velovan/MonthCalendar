@@ -9,7 +9,7 @@ import SelectedMonth.SelectedMonthMain;
 
 public class MainCalendar {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		Calendar today = Calendar.getInstance();
 
 		// Print current month
@@ -25,4 +25,5 @@ public class MainCalendar {
 		SelectedMonthMain clen = new SelectedMonthMain();
 		clen.introducingMonth();
 	}
+	
 }
