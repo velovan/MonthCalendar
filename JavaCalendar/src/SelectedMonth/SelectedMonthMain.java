@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class SelectedMonthMain {
+public class SelectedMonthMain{
 
 	/*
 	 * This part of program asks users for month and years, then it evaluates the
@@ -17,7 +17,6 @@ public class SelectedMonthMain {
 	 */
   
 	PrintCalendarMonthYear calendarMonthYear = new PrintCalendarMonthYear();
-
 	
 	public SelectedMonthMain(){
 		System.out.println("\n ***" + "Сalendar for the selected month" + "***\n");
@@ -37,30 +36,23 @@ public class SelectedMonthMain {
 		// read them as string
 		String monthText = in.next();
 		String yearText = in.next();
-
 		in.close();
 
 		try {
-
 			// convert month and year to integer.
 			// throws NumberFormatException if not convertible.
 			// It would be caught below:
 			month = Integer.parseInt(monthText);
 			year = Integer.parseInt(yearText);
-
 			// check if it is a valid month
 			if (month < 1 || month > 12)
 				throw new Exception("Invalid index for month: " + month);
-
 			// print the calendar for the given month/year.
 			PrintCalendarMonthYear.printCalendarMonthYear(month, year);
-
-		} catch (NumberFormatException e) {
-			
+		} catch (NumberFormatException e){
 			// handles NumberFormatException
 			System.err.println("Number Format Error: " + e.getMessage());
-		} catch (Exception e) {
-			
+		} catch (Exception e) {	
 			// handles any other Exception
 			System.err.println(e.getMessage());
 		}
