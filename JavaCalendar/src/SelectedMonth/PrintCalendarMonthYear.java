@@ -5,11 +5,12 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-public class PrintCalendarMonthYear {
+public class PrintCalendarMonthYear{
 
 	PrintCalendar printCalendar = new PrintCalendar();
 
-	public static void printCalendarMonthYear(int month, int year) {
+	public static void printCalendarMonthYear(int month, int year){
+		
 		LocalDate today = LocalDate.now();
 		
 		// create a new GregorianCalendar object
@@ -20,7 +21,7 @@ public class PrintCalendarMonthYear {
 		cal.set(year, month - 1, 1);
 	 
 		// print calendar header
-		System.out.println( "\n" + "       " + cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.UK) + ":  " + cal.get(Calendar.YEAR));
+		System.out.println( "\n" + "      " + cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.UK) + ":  " + cal.get(Calendar.YEAR));
 		System.out.println("__________________________\n ");
 		
 		// obtain the weekday of the first day of month.
